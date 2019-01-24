@@ -8,13 +8,20 @@ import java.util.*;
 
 public class Die
 {
+  int sides = 6;
+
   public Die()
   {
   }
 
+  public Die(int sides)
+  {
+    this.sides = sides;
+  }
+
   public int getRoll()
   {
-      return (int) ((Math.random()*6) + 1);
+      return (int) ((Math.random()*sides) + 1);
   }
 
 }

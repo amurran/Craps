@@ -25,12 +25,14 @@ public class Craps
     {
       play = false;
     }
+    in.nextLine();
 
     while (play)
     {
+      System.out.println("Good luck.");
         while (round)
         {
-          System.out.println("Rolling two dice. Good luck.");
+          System.out.println("Rolling two dice.");
           int[] results = dice.getRolls();
           sum = results[0] + results[1];
           System.out.println("You rolled a " + results[0] + " and a " + results[1]);
@@ -53,12 +55,14 @@ public class Craps
             System.out.println("Your new point is " + sum);
             System.out.println("Click enter to roll again");
             response = in.nextLine();
+            in.nextLine();
           }
 
           else
           {
             System.out.println("Survived another round! Congrats. Click enter to roll again");
             response = in.nextLine();
+            in.nextLine();
           }
 
         }

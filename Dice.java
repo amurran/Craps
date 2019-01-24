@@ -31,13 +31,4 @@ public class Dice
     }
     return results;
   }
-
-  public static void main (String[] args)
-  {
-    Scanner in = new Scanner(System.in);
-    Dice test = new Dice();
-    int[] results = test.getRolls();
-    System.out.println(results[0]);
-    System.out.println(results[1]);
-  }
 }
